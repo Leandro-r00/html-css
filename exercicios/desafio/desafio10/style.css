@@ -1,0 +1,130 @@
+@charset "UTF8";
+
+ @font-face {
+            font-family: 'idroid';
+            src: url('idroid.otf') format('opentype');
+        }
+
+/*Formatações gerais*/
+body {
+    background-color: #84e1ad;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+p ,h1, h2 {
+    margin: 5px;
+    padding: 2px;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, #84e1ad,white);
+    font-family: idroid;
+    margin: 5px;
+    padding: 5px;
+    color: #1a5c38;
+}
+ #titulo {
+    margin: 25px 10px 10px 10px;
+    color: #1a5c38;
+ }
+
+/*Cabeçalho*/
+header {
+    background-color: #448244df;
+    color: white;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 3px;
+    font-size: 2em;
+    color: white;
+}
+
+header > h2 {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+/*Menu de navegação*/
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul > li {
+    text-decoration: none;
+    display: inline-block ;
+    margin: 20px 0px 0px 0px;
+    padding: 4px;
+    text-align: left;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Formatações gerais*/
+main {
+    background-color: white;
+    text-align: justify;
+    margin: auto;
+    width: 80%;
+}
+
+section > article > h1 {
+    font-family: idroid;
+    font-size: 2em;
+    margin: 10px;
+    padding: 4px;
+}
+/* Vídeo youtube*/
+ iframe {
+    width: 80%;
+ }
+
+/* Parte final*/
+
+ .box-final {
+    background-color: #1a5c38;
+ }
+
+.modal > h1 {
+    background-color: #84e1ad;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    color: white;   
+}
+
+ #head-modal > h1 {
+    background-color: #84e1ad;
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;   
+}
+
+/* Rodapé / footer*/
+ footer{
+    background-color: #1a5c38;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    margin: 0px;
+    padding: 3px;
+ }
+
+
+

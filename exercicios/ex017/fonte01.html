@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc 
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            /* lighter, normal, bold, bolder */
+            /* weight = peso, widht = largura, height = altura */
+        }
+
+        h1  {
+            /* shorthand font           
+            - font-style > font-weight > font-size > font-family
+
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: sans-serif;          
+            
+            */
+            font: italic bolder 3em, sans-serif;
+        }
+
+        h2  {
+            font: bold 2em sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem eos ipsum quos odit accusamus sunt nisi nobis dolore suscipit, sequi neque natus obcaecati consectetur eveniet! Consectetur ea repellat voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate tenetur molestiae, commodi corporis accusamus quia. Unde voluptatibus ut, similique sed voluptatem veritatis iste minima quod, delectus distinctio consequatur nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate aperiam amet unde, iusto quae placeat impedit eius, veritatis sequi, vel a exercitationem eligendi rem explicabo corrupti? Vel, fugiat dolorem.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio tempore provident est officiis quaerat eligendi blanditiis eum. Voluptatum suscipit consectetur harum architecto expedita minima mollitia corrupti deserunt vero fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, soluta laboriosam quas aperiam magnam adipisci quod odit, deserunt nemo perferendis debitis quidem impedit cum numquam recusandae voluptate. Error, voluptatum cupiditate!</p>
+
+</body>
+</html>
