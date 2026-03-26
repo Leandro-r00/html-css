@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas 1 e 2 do Desafio 13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 350px;
+            padding: 2px;
+        }
+
+        table.ter {
+            width: 600px;
+            padding: 2px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Primeira Tabela</h1>
+        <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <h1>Segunda Tabela</h1>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+    <h1>Terceira Tabela</h1>
+    <table class="ter">
+        <tr>
+            <td>Grupo</td>
+            <td>Nomes</td>
+            <td colspan="3">Filmes</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Mulheres</td>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Homens</td>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+    </table>
+
+    <p>Um parágrafo de texto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe fuga non dolores, explicabo repellendus itaque minima enim voluptatum. Ad necessitatibus unde deleniti aspernatur repellendus ipsa aperiam ipsum sit quo.</p>
 </body>
 </html>
