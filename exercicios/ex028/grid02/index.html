@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout na prática</title>
     <style>
-        
+        /* 
+       Em GRID LAYOUT
+
+       Sempre que ajustar posicionamento de itens e conteúdos, levar em consideração regra abaixo:
+
+        ALIGN (items ou content): alinhamento no sentido VERTICAL (transverso do eixo principal)
+
+        JUSTIFY (items ou content): alinhamento no sentido HORIZONTAL (eixo principal)
+       */
+
         div.container {
             border: 3px solid  blue;
             height: 250px;
             display: grid;
+
 /*grid-template: 
     GRID-TEMPLATE-ROWS / GRID-TEMPLATE-COLUMNS
-        grid-template: repeat(3, 100px) / repeat(3, auto);
-*/
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+    */
             grid-template-rows: auto auto auto; 
             grid-template-columns: auto auto auto;
             gap: 10px;
-
-/* place-items: ALIGN JUSTIFY*/
-            align-items: normal; 
+            
+            align-items: normal; /* place-items: ALIGN JUSTIFY*/
             justify-items: normal;
-
-/* place-content: ALIGN JUSTIFY*/
-            align-content: normal; 
+            align-content: normal; /* place-content: ALIGN JUSTIFY*/
             justify-content: normal;
        }
-/* Em GRID LAYOUT
-Sempre que ajustar posicionamento, regra abaixo:
-    - ALIGN (items ou content): alinhamento no sentido VERTICAL
-    - JUSTIFY (items ou content): alinhamento no sentido HORIZONTAL
-*/
-        div.item {
+
+       div.item {
             border: 1px solid red;
             padding: 5px;
        }
