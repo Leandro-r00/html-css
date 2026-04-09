@@ -5,37 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout na prática</title>
     <style>
-        
         div.container {
             border: 3px solid  blue;
-            height: 250px;
             display: grid;
-/*grid-template: 
-    GRID-TEMPLATE-ROWS / GRID-TEMPLATE-COLUMNS
-grid-template-rows: auto auto auto; 
-grid-template-columns: auto auto auto;
-*/          grid-template: repeat(3, auto) / repeat(3, auto);
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
             gap: 10px;
-
-/* place-items: ALIGN JUSTIFY
-align-items: start; 
-justify-items: center;
-*/
-            place-items: start center;
-
-/* place-content: ALIGN JUSTIFY
-align-content: space-between; 
-justify-content: end;
-*/
-            place-content: space-between end;
+            place-items: normal normal;
+            place-content: normal normal;
        }
-/* Em GRID LAYOUT
-Sempre que ajustar posicionamento, regra abaixo:
-    - ALIGN (items ou content): alinhamento no sentido VERTICAL
-    - JUSTIFY (items ou content): alinhamento no sentido HORIZONTAL
-*/
+
         div.item {
-            border: 1px solid red;
+            border: 3px solid red;
             padding: 5px;
        }
 
@@ -51,6 +35,8 @@ Sempre que ajustar posicionamento, regra abaixo:
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
